@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-external-browser" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>ExternalBrowser</name>
+    <description>Open URLs in the external system browser on iOS</description>
+    <license>MIT</license>
+
+    <js-module src="www/ExternalBrowser.js" name="ExternalBrowser">
+        <clobbers target="ExternalBrowser" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ExternalBrowser">
+                <param name="ios-package" value="ExternalBrowser" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/ExternalBrowser.swift" />
+    </platform>
+</plugin>
