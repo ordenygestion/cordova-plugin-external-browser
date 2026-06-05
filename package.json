@@ -1,12 +1,19 @@
 {
   "name": "cordova-plugin-external-browser",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "description": "Open URLs in external browser on iOS",
+  "main": "www/ExternalBrowser.js",
+  "keywords": [
+    "cordova",
+    "ios",
+    "browser",
+    "external"
+  ],
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-external-browser",
+    "platforms": [
+      "ios"
+    ]
+  }
 }
